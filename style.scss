@@ -1,0 +1,270 @@
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+// Navbar
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  color: $font-color;
+  padding: 1rem 3rem;
+  height: 120px;
+  & img {
+    width: 175px;
+  }
+
+  & ul {
+    display: flex;
+    & li a {
+      margin: 0 4rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $font-color;
+      &:hover {
+        color: $secondary-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Main Page
+.hero {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-color;
+  color: $font-color;
+}
+
+.hero-content {
+  margin: 0 8rem 0 0;
+  & h1 {
+    font-size: 6rem;
+    margin: 3rem 0;
+  }
+
+  & h4 {
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+}
+
+.hero-img {
+  margin: 0 0 0 8rem;
+  & img {
+    width: 600px;
+  }
+}
+
+// Catalogue Page
+.catalogue-page {
+  background-color: $background-color;
+  color: $font-color;
+}
+.catalogue-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 5rem;
+  & #chevron {
+    padding-top: 11rem;
+    padding-left: 3rem;
+    &:hover {
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.artists-container {
+  display: flex;
+  padding: 3rem 0;
+}
+
+.artist-listing {
+  margin: 2rem 2rem;
+  text-align: center;
+  & h3 {
+    margin: 2rem 0;
+  }
+  & img {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    &:hover {
+      border: 5px solid $secondary-color;
+      transform: scale(1.25);
+      cursor: pointer;
+    }
+  }
+}
+
+// Support Page
+.support-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-color;
+  color: $font-color;
+  & h2 {
+    margin: 2rem 0;
+    font-size: 3rem;
+  }
+
+  & .btn {
+    background-color: $secondary-color;
+    font-weight: 600;
+    color: $font-color;
+    margin: 2rem 0;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(.95);
+    }
+    &:focus {
+      outline: 0;
+    }
+    &::placeholder {
+      color: $font-color;
+    }
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+
+    & input {
+      margin: 2rem 0;
+      padding: 15px 25px;
+      border-radius: 10px;
+      text-align: center;
+      color: $primary-color;
+      font-size: 1.3rem;
+      outline: 0;
+    }
+  }
+}
+
+// Download Page 
+.download-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  overflow: hidden;
+  padding: 3rem 0;
+  & h1 {
+    margin: 2rem 0;
+  }
+  & h4 {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+  }
+  & button {
+    background-color: $secondary-color;
+    font-weight: 600;
+    color: $font-color;
+    width: 175px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 3rem 0;
+    &:hover {
+      background-color: $secondary-color;
+      color: $font-color;
+    }
+    &:active {
+      transform: scale(.95);
+    }
+  }
+
+  & img {
+    width: 375px;
+  }
+}
+
+// Sign Up Page
+
+// Footer
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color;
+  color: $font-color;
+  height: 40vh;
+  padding: 6rem 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font-color;
+  background-color: $primary-color;
+  margin: 3rem 0;
+  &li {
+    margin: 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    &li:hover {
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.social-icons {
+  color: $font-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  & i {
+    margin: 0 2rem;
+    &:hover {
+      color: $secondary-color;
+      cursor: pointer;
+
+    }
+    &:hover {
+      transform: scale(.95);
+    }
+  }
+}

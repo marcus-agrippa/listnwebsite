@@ -1,0 +1,15 @@
+.form {
+  &-text {
+    color: black;
+  }
+
+  input[type='text'],
+  input[type='text'],
+  input[type='text'],
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}

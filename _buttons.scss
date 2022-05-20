@@ -1,0 +1,34 @@
+%btn {
+  display: inline-block;
+  background-color: #08C0BB;
+  font-weight: 600;
+  color: #fff;
+  width: 175px;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+    color: #08C0BB;
+  }
+
+  &:active {
+    transform: scale(.95);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $secondary-color;
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: $light-color;
+}
